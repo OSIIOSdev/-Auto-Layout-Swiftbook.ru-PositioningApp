@@ -8,9 +8,12 @@
 import UIKit
 
 final class ViewController: UIViewController {
-    var blueView = UIView()
-    var redView = UIView()
+    
+    // MARK: - Private properties
+    private var blueView = UIView()
+    private var redView = UIView()
 
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,6 +22,7 @@ final class ViewController: UIViewController {
         setupLayout()
     }
     
+    // MARK: - Private methods
     private func setupLayout() {
         configureBlueView()
         configureRedView()
